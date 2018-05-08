@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+@media print {
+    body, page {
+        margin: 0;
+        box-shadow: 0;
+    }
+}
+
+.clearfix {}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+#order-form.wrapper {
+    width: 21cm;
+    margin: 0 auto;
+    padding: 10px 10px;
+    font-size: 13px;
+}
+
+#order-form .title {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#order-form .date {
+    text-align: right;
+}
+#order-form .date > span {
+    display: inline-block;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 0 40px;
+}
+
+#order-form address {
+    float: right;
+    width: 245px;
+    margin-top: -20px;
+    font-style: normal;
+}
+#order-form address > p {
+    font-style: normal;
+    margin: 0;
+    line-height: 1.2rem;
+}
+#order-form address figure {
+    padding-left: 50px;
+}
+#order-form address figcaption {
+    font-style: normal;
+}
+#order-form .info {
+    margin-right: 245px;
+    padding-right: 20px;
+}
+#order-form .info h2 {
+    margin: 45px 0 70px 0;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+}
+#order-form .info table {
+    border: 2px solid #000;
+    width: 470px;
+}
+#order-form .info table thead tr {
+    background-color: #d0d0d0;
+}
+#order-form .info table td {
+    padding: 5px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#order-form .container {
+    position: relative;
+}
+
+#order-form .container .red-logo {
+    position: absolute;
+    right: 0;
+    top: -90px;
+}
+
+#order-form .container .top {
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+#order-form .container .top .table-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+#order-form .container .top td:not(.table-title) {
+    border-top: 1px solid #000;
+}
+#order-form .container .top .guide td,
+#order-form .container .top td.table-title ~ td {
+    border: none;
+}
+
+#order-form .tg  {
+    border-collapse:collapse;border-spacing:0;
+    width: 100%;
+    margin-top: 30px;
+    border: 4px solid #000;
+}
+#order-form .tg tr.guide td {border:none;height:0;padding:0;}
+#order-form .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+#order-form .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:5px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;border-bottom: 4px solid #000;}
+#order-form .tg .tg-fiml{background-color:#d0d0d0;color:#333333;border-color:inherit;vertical-align:top}
+#order-form .tg .tg-us36{border-color:inherit;vertical-align:top;font-weight:700;}
+#order-form .tg .tg-lqy6{text-align:right;vertical-align:top;}
+#order-form .tg .tg-nt9c{background-color:#d0d0d0;color:#333333;vertical-align:top}
+#order-form .tg .tg-yw4l{text-align:right;vertical-align:top}
+#order-form .tg .tg-9hbo{font-weight:bold;vertical-align:top}
+#order-form .tg .total-separate {border-top: 4px solid #000;}
+#order-form .tg .total .tg-lqy6 {font-weight: 700;}
+
+
+#order-form footer table {}
+#order-form footer table td:nth-child(2) {
+    padding-left: 30px;
+}
